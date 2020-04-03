@@ -1,0 +1,7 @@
+#Порт приложения
+server:
+  port: 8081
+#Логгирование
+logging:
+  level:
+    org.springframework.ws: TRACE
