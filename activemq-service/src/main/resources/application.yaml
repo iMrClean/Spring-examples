@@ -1,6 +1,6 @@
 #Порт приложения
 server:
-  port: 8082
+  port: 8083
 #Логгирование
 logging:
   level:
@@ -16,7 +16,7 @@ spring:
         instance:
           metadata:
             user: user
-          name: soap-client
+          name: active-mq-service
   #Логин пароль для доступа
   security:
     user:
@@ -31,3 +31,6 @@ management:
     web:
       exposure:
         include: '*'
+#Ссылка на брокера, распределяющая сообщения
+activemq:
+  broker-url: tcp://localhost:61616

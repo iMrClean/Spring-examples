@@ -31,9 +31,9 @@
                 <configuration>
                     <generatePackage>com.example.generated</generatePackage>
                     <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
-                    <schemaDirectory>src/main/resources/xsd</schemaDirectory>
+                    <schemaDirectory>src/main/resources/wsdl</schemaDirectory>
                     <schemaIncludes>
-                        <include>*.xsd</include>
+                        <include>*.wsdl</include>
                     </schemaIncludes>
                     <episode>false</episode>
                 </configuration>

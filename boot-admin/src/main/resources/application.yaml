@@ -1,0 +1,28 @@
+#Порт приложения
+server:
+  port: 8080
+#Логгирование
+logging:
+  level:
+    org.springframework.ws: TRACE
+#Настройки аутентификации для админской части
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  #TODO прикрутить отправку емейла
+  mail:
+    host: localhost
+    username: smtp-server-user
+    password: smtp-server-password
+  boot:
+    admin:
+      notify:
+        mail:
+          #От кого
+          from: 'Spring Boot Admin <noreply@foo.com>'
+          #Кому
+          to: 'foo@bar.ru'
+          #В копию
+          cc: foo@bar.ru

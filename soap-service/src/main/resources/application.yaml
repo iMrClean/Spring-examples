@@ -5,3 +5,29 @@ server:
 logging:
   level:
     org.springframework.ws: TRACE
+#Конфиг для подключения проекта к админке
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        username: admin
+        password: admin
+        instance:
+          metadata:
+            user: user
+          name: soap-service
+  #Логин пароль для доступа
+  security:
+    user:
+      name: user
+      password: user
+#Для актуатора
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'

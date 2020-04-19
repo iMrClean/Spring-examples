@@ -1,6 +1,6 @@
-#Порт приложения
+#Порт (если 0, то рандомный)
 server:
-  port: 8082
+  port: 0
 #Логгирование
 logging:
   level:
@@ -16,7 +16,7 @@ spring:
         instance:
           metadata:
             user: user
-          name: soap-client
+          name: example-boot-client
   #Логин пароль для доступа
   security:
     user:

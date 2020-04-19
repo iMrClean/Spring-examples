@@ -1,6 +1,6 @@
 #Порт приложения
 server:
-  port: 8082
+  port: 8084
 #Логгирование
 logging:
   level:
@@ -16,7 +16,7 @@ spring:
         instance:
           metadata:
             user: user
-          name: soap-client
+          name: active-mq-client
   #Логин пароль для доступа
   security:
     user:
@@ -31,3 +31,12 @@ management:
     web:
       exposure:
         include: '*'
+#Ссылка на брокера, распределяющая сообщения
+activemq:
+  broker-url: tcp://localhost:61616
+#Настройки для проекта
+my:
+  #Название очереди
+  queue: simple.queue
+  #Таймер записи в очередь (каждые 3 секунды)
+  cron: '*/3 * * * * *'
