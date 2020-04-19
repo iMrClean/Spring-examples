@@ -6,5 +6,4 @@ gen
 .gitignore
 .idea/vcs.xml
 
-soap-client/target/*
-soap-service/target/*
+*/target/*
