@@ -25,6 +25,8 @@
         <module>activemq-service</module>
         <module>boot-admin</module>
         <module>boot-client</module>
+        <module>cloud-config-server</module>
+        <module>swagger</module>
     </modules>
 
     <properties>

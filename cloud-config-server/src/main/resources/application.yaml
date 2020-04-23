@@ -1,0 +1,10 @@
+server:
+  port: 8090
+# Из репозитория
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #uri: "тут должна быть ссылка на конфиг"
+          uri: https://github.com/airbnb/cloud-maker
