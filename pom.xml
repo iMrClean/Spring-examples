@@ -27,6 +27,7 @@
         <module>boot-client</module>
         <module>cloud-config-server</module>
         <module>swagger</module>
+        <module>web-socket</module>
     </modules>
 
     <properties>
